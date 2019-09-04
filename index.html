@@ -4,37 +4,57 @@
             <title>My Page!</title>
             <style>
                 body {
-                    background: rgb(26, 34, 48);
+                    background: rgb(58,58,58);
                     color:white;
                     font-family: Helvetica Neue, Arial, Helvetica, sans-serif,Arial, sans-serif;
+                    margin: 0px;
+                    padding: 0px;
                 }
-                h1 {
+                header {
                     background: black;
-                    color:  rgb(113, 226, 221);
+                    padding: 20px;
                 }
-                h2 {
-                    color: rgb(176, 233, 230);
-                    opacity: 0.5;
+                section {
+                    background: white;
+                    color:grey;
+                    padding:20px;
+                    display: flex;
                 }
-                button {
-                    background: rgb(176, 233, 230);
-                    border: none;
-                    border-radius: 12px;
+                footer {
+                    background: black;
+                    padding:10px 20px;
                 }
+                div {
+                    background:red;
+                    margin:auto;
+                    width: 100px;
+                }
+                ul {
+                    margin:0;
+                    padding:0;
+                    list-style-type: none;
+                }
+                
             </style>
     </head>
         <body>
-            <h1>Welcome to Aziz's Page</h1>
-            <h2>About me</h2>
-            <p>I am pretty cool</p>
-            <p><strong>Fun Facts:</strong></p>
-            <ul>
-                <li>I am 20 years old</li>
-                <li>I like dessert</li>
-                <li>I currently have a fever</li>
-                <li><em>I know how to use italics</em></li>
-                <li><button>Click here for more!</button></li>
-            </ul>
+            <header>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Locations</li>
+                        <li>Contacts</li>
+                    </ul>
+                </nav>
+                <h1>Title</h1>
+            </header>
+                <section>
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                    </section>
+                <section>lower-section</section>
+                <footer>footer</footer>
         </body>
 
 </html>
