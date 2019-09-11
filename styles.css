@@ -7,29 +7,123 @@ body {
 }
 header {
     background: black;
+    background-image: url("images/snack.jpg");
+    background-size: 100%;
+    background-position: center;
     padding: 20px;
+    height:400px;
+    text-align: center;
 }
-section {
-    background: white;
-    color:grey;
-    padding:20px;
-    display: flex;
+
+a {
+    text-decoration: none;
+    color: aqua;
 }
-footer {
-    background: black;
-    padding:10px 20px;
+a:hover {
+   /* text-decoration: underline;*/
 }
-div {
-    background:pink;
-    margin:auto;
-    width: 100px;
-}
-ul {
+nav ul {
     margin:0;
     padding:0;
     list-style-type: none;
 }
-li {
+nav li:hover {
+    background-color: grey;
+    border-radius: 3px;
+}
+nav li {
     display:inline-block;
     margin-right:20px;
+}
+
+.features {
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.features figure {
+    margin: auto;
+    width:200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.features figure img {
+    border: solid white;
+    border-radius:50%;
+    box-shadow: grey 0 0 10px;
+    width:200px;
+}
+
+
+.feature-box {
+    background: white;
+    color:grey;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#frank {
+    font-size: 200%;
+}
+
+
+footer {
+    background: black;
+    color:grey;
+    font-size: 12px;
+    padding:20px 20px;
+    text-align:center
+}
+
+.feature-box div {
+    margin:auto;
+    width: 100px;
+}
+.feature-box.sales div {
+    background:pink;
+
+}
+
+.feature-box.closeout div {
+    background:red;
+
+}
+
+li:first-child {
+   /* background: grey;
+    display:inline-block;
+    border-radius: 3px;
+    padding: 2px;
+    margin-right: 20px;*/
+}
+
+header .logo a {
+    background-image: url("images/logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -99999999px;
+    position: relative;
+    top:-10px;
+   /* background-color: red;*/
+    display:inline-block;
+    height:150px;
+    width:300px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .features {
+        background: pink;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .features {
+        background: red;
+    }
 }
