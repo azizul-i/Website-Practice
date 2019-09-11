@@ -5,6 +5,9 @@ body {
     margin: 0px;
     padding: 0px;
 }
+header .mobile {
+    display:none;
+}
 header {
     background: black;
     background-image: url("images/snack.jpg");
@@ -36,12 +39,28 @@ nav li {
     margin-right:20px;
 }
 
+/* Respponse rules*/
+@media screen and (max-width: 800px  ) {
+    header {
+        height: 250px;
+        background-position: 0 -30px;
+    }
+header .mobile {
+    display: inline-block;
+}
+header .desktop {
+    display: none;
+}
+
+}
+
 .features {
     background: white;
     color: grey;
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
 }
 
 .features figure {
@@ -57,6 +76,12 @@ nav li {
     width:200px;
 }
 
+/****Responsive ******/
+@media screen and (max-width: 800px) {
+   /* .features {
+        display: block;
+    }*/
+}
 
 .feature-box {
     background: white;
